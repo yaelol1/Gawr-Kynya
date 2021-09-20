@@ -1,24 +1,49 @@
-#+TITLE: Kyria Keymap
-#+OPTIONS: ^:nil
-* About
-This is my weeb QMK Kyria keymap, the main feature is its animation of [[https://twitter.com/gawrgura][Gawr Gura]], but it is really powerfull if you watch closely
+# Kyria Keymap
 
+# About
+This is my weeb QMK Kyria keymap, the main feature is its animation of [Gawr Gura](https://twitter.com/gawrgura), but it is really powerfull if you watch closely
 
-# Base Layer: QWERTY 
+# features 
+## animation
+![Gawr-Animation](img/gawr.gif)
+Thaks to [j-inc](https://www.reddit.com/r/olkb/comments/h00a8b/i_made_an_oled_animation_of_bongo_cat_that/) for the code, [hikotel0611](https://danbooru.donmai.us/posts/4196461) and [this pixel art](https://www.pinterest.fr/pin/373095150361478394/) for the drawings
+## Frequency Symbol layer 
+[layer](#Symbol)
+The location of the symbols is mostly based on [frequency](http://xahlee.info/comp/computer_language_char_distribution.html) by various programming languages, but it also uses some mnemonics. 
+left hand -> brackets 
+right index finger -> logical operators 
+ \ and | are key neighbors just like ~ and `
+## home row modifiers
+The “home row” refers to the middle row of alpha keys “mods” refer to modifiers.
+My home row mods go to the symbol layer, if you want to know more about implementation, you can go to the [wiki](https://precondition.github.io/home-row-mods)
+## enconder
+There is one encoder on the right half. It has a different function depending on the layer 
+[Base](#Base-Layer:-QWERTY) -> volume control
+[Function](#Function) -> next/prev media 
+[Symbol](#Symbol) -> up/down arrows
+[Gaming](#Gaming) -> left/right arrows
+
+## x-case 
+Made by [Andrewjrae](https://github.com/andrewjrae/kyria-keymap#case-modes)
+Case modes is a feature that implements different case handling modes, Caps Word, and X-Case. See [features/casemodes.c](features/casemodes.c) for implementation details
+
+# Layers 
+## Base Layer: QWERTY 
 ```
 //  ,-------------------------------------------.                              ,-------------------------------------------.
-//  |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |  Del   |
+//  |  Tab   |   Q  |   W  |   E  |   R  |   T  |                              |   Y  |   U  |   I  |   O  |   P  |   - _  |
 //  |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 //  |  BS    |   A  |   S  |  D   |   F  |   G  |                              |   H  |   J  |   K  |   L  |  : ; |   ' "  |
 //  |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
-//  | NAV    |   Z  |   X  |   C  |   V  |   B  | Lead | RAISE|  | LOWER|BSpace|   N  |   M  |  , < |  . > |  / ? | NAV    |
+//  | NAV    |   Z  |   X  |   C  |   V  |   B  | meh  | Hyper|  | Space|c(sft)|   N  |   M  |  , < |  . > |  / ? | NAV    |
 //  `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
-//                         | MPlay| GUI  | LCtrl| Space| LALT |  | RCtrl| Enter| NAV  | RALT |Scroll|
-//                         |      |      |      |      |      |  |      |      |      |      | Lock |
-//                         `----------------------------------'  `----------------------------------'
+//                         |gaming|numpad|Caps  | esc  | Enter|  | Space|Menu  |Sneak |Menu  |Volume|    
+//                         |      |      | word |      |      |  |      |      | case |      |      |          
+//                         `----------------------------------'  `----------------------------------'    
 ```
+c(sft) = ctrl + shift
 
-# Base Layer: Colemak 
+## Base Layer: Colemak 
 
 ```
 //  ,-------------------------------------------.                              ,-------------------------------------------.
@@ -26,14 +51,15 @@ This is my weeb QMK Kyria keymap, the main feature is its animation of [[https:/
 //  |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
 //  |    BS  |   A  |   R  |  S   |   t  |   d  |                              |   H  |   N  |   E  |   I  |   O  |  "'    |
 //  |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
-//  | Lshift |   Z  |   X  |   C  |   V  |   B  |Raise | Esc  |  | Space| win  |   K  |   M  | ,  < | . >  | /  ? |  shift |
+//  |  NAV   |   Z  |   X  |   C  |   V  |   B  |meh   |Hyper |  | Space|c(sft)|   K  |   M  | ,  < | . >  | /  ? |  NAV   |
 //  `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
-//                         | meh  |hyper |Lctrl |      | Enter|  | Space| alt  |altGR |Menu  |Volume|    
-//                         |      |      |      | Lower|      |  |      |      |      |      |      |          
+//                         |gaming|numpad|Caps  | esc  | Enter|  | Space|Menu  |Sneak |Menu  |Volume|    
+//                         |      |      | word |      |      |  |      |      | case |      |      |          
 //                         `----------------------------------'  `----------------------------------'        
 ``` 
 
-# Symbol layer 
+## Symbol  
+
 ```
 //   ,-------------------------------------------.                              ,-------------------------------------------.
 //   |        |   1  |  2   |   3  |   4  | 5    |                              |  6   |  7   |  8   |  9   |  0   |        |
@@ -47,7 +73,7 @@ This is my weeb QMK Kyria keymap, the main feature is its animation of [[https:/
 //                          `----------------------------------'  `----------------------------------'
 ``` 
 
-# Function Layer
+## Function 
 ```
 //   ,-------------------------------------------.                              ,-------------------------------------------.
 //   |        | F1   |  F2  | F3   | F4   | F5   |                              | F6   | F7   |  F8  | F9   | F10  |  home  |
@@ -61,7 +87,7 @@ This is my weeb QMK Kyria keymap, the main feature is its animation of [[https:/
 //                          `----------------------------------'  `----------------------------------'
 
 ```
-# Gaming layer 
+## Gaming  
 ```
 //   ,-------------------------------------------.                              ,-------------------------------------------.
 //   |  tab   |   q  |  1   |  2   |   3  |  4   |                              | f1   |  f2  |  f3  |   f4 |  f5  |   f6   |
@@ -73,4 +99,18 @@ This is my weeb QMK Kyria keymap, the main feature is its animation of [[https:/
 //                          |      |      |      |      |      |  |      |      |      |      |      |
 //                          |      |      |      |      |      |  |      |      |      |      |      |
 //                          `----------------------------------'  `----------------------------------' 
+```
+## Numpad 
+```
+//  ,-------------------------------------------.                              ,-------------------------------------------.
+//  |        |      |      |      |      |      |                              |  /   |  7   |  8   |   9  |  -   |        |
+//  |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
+//  |        | TOG  | SAI  | HUI  | VAI  | MOD  |                              |  *   |  4   |  5   |   6  |  +   |        |
+//  |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
+//  |        |      | SAD  | HUD  | VAD  | RMOD |      |      |  |      |      |  .   |  1   |  2   |   3  |Enter |        |
+//  `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
+//                         |      |      |      |      |      |  |      |  0   |  0   |      |      |
+//                         |      |      |      |      |      |  |      |      |      |      |      |
+//                         `----------------------------------'  `----------------------------------'
+
 ```
