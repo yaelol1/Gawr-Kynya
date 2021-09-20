@@ -23,11 +23,11 @@ Right index finger -> logical operators
 ## Home row modifiers
 The “home row” refers to the middle row of alpha keys “mods” refer to modifiers.
 
-My home row mods go to the symbol layer, if you want to know more about implementation, you can go to the [wiki](https://precondition.github.io/home-row-mods)
+My home row mods go to the symbol layer, if you want to know more about implementation, you can go to the [wiki](https://precondition.github.io/home-row-mods) .
 
 ## Enconder
 
-There is one encoder on the right half. It has a different function depending on the layer 
+There is one encoder on the right half. It has a different function depending on the layer.
 
 [Base](#Layers) -> volume control
 
@@ -41,7 +41,7 @@ There is one encoder on the right half. It has a different function depending on
 
 Made by [Andrewjrae](https://github.com/andrewjrae/kyria-keymap#case-modes)
 
-Case modes is a feature that implements different case handling modes, Caps Word, and X-Case. See [features/casemodes.c](features/casemodes.c) for implementation details
+Case modes is a feature that implements different case handling modes, Caps Word, and X-Case. See [features/casemodes.c](features/casemodes.c) for implementation details.
 
 # Layers 
 ## Base Layer: QWERTY 
