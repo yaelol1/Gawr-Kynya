@@ -8,7 +8,7 @@ This is my weeb QMK Kyria keymap, the main feature is its animation of [Gawr Gur
 ![Gawr-Animation](img/gawr.gif)
 Thaks to [j-inc](https://www.reddit.com/r/olkb/comments/h00a8b/i_made_an_oled_animation_of_bongo_cat_that/) for the code, [hikotel0611](https://danbooru.donmai.us/posts/4196461) and [this pixel art](https://www.pinterest.fr/pin/373095150361478394/) for the drawings
 ## Frequency Symbol layer 
-[layer](#Symbol)
+[layer](#Symbol) \n
 The location of the symbols is mostly based on [frequency](http://xahlee.info/comp/computer_language_char_distribution.html) by various programming languages, but it also uses some mnemonics. 
 left hand -> brackets 
 right index finger -> logical operators 
