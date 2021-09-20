@@ -1,6 +1,24 @@
 #include QMK_KEYBOARD_H
 #include <string.h>
 
+
+// [Home Row Mods]
+
+enum custom_keycodes {
+    CAPSWORD = SAFE_RANGE,
+    SNAKECASE,
+    MT_AT,
+    MT_LBRC,
+    MT_LCBR,
+    MT_LPRN,
+    MT_RPRN,
+    MT_EQL,
+    MT_ASTR,
+    MT_DLR,
+    MT_HASH,
+    MT_PPLS
+};
+
 // ---
 // COLEMAK
 // Left-hand home row mods
@@ -32,18 +50,18 @@
 // ---
 // NUM
 // Left-hand home row mods
-#define GUI_AT LGUI_T(KC_AT)
-#define ALT_LBRC LALT_T(KC_LBRC)
-#define SFT_LCBR LSFT_T(KC_LCBR)
-#define HOME_LPRN LCTL_T(KC_LPRN)
-#define ALT_RPRN RALT_T(KC_RPRN) 
+#define GUI_AT MT(MOD_LGUI, KC_AT)
+#define ALT_LBRC MT(MOD_LALT, KC_LBRC)
+#define SFT_LCBR MT(MOD_LSFT, KC_LCBR)
+#define HOME_LPRN MT(MOD_LCTL, KC_LPRN)
+#define ALT_RPRN MT(MOD_RALT, KC_RPRN) 
 
-// Right-hand home row mods
-#define CTL_EQL RCTL_T(KC_EQL)
-#define SFT_ASTR RSFT_T(KC_ASTR)
-#define ALT_DLR LALT_T(KC_DLR)
-#define GUI_HASH RGUI_T(KC_HASH)
-#define ALT_PPLS RALT_T(KC_PPLS) 
+// // Right-hand home row mods
+#define GUI_HASH MT(MOD_LGUI ,KC_HASH)
+#define ALT_DLR MT(MOD_LALT ,KC_DLR)
+#define SFT_ASTR MT(MOD_LSFT ,KC_ASTR)
+#define CTL_EQL MT(MOD_LCTL ,KC_EQL)
+#define ALT_PPLS MT(MOD_RALT ,KC_PPLS) 
 
 // --- 
 // Layers
@@ -54,11 +72,5 @@
 #define COLEMAK   DF(_COLEMAK)
 #define QWERTY   DF(_QWERTY)
 
-// #define GUI_HASH MT(MOD_LGUI, KC_F23)
-// #define CMD_HASH LGUI_T(KC_LANG6)
 
-// enum custom_keycodes {
-//     MT_POUND = SAFE_RANGE
-// };
 // https://precondition.github.io/home-row-mods#using-non-basic-keycodes-in-mod-taps
-// #define HOME_HASH CMD_T(MT_POUND)

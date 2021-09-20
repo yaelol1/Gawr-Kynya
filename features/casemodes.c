@@ -136,8 +136,9 @@ bool terminate_case_modes(uint16_t keycode, const keyrecord_t *record) {
             // Keycodes to ignore (don't disable caps word)
             case KC_A ... KC_Z:
             case KC_1 ... KC_0:
+            case KC_SCLN:
             case KC_MINS:
-            case KC_UNDS:
+            case KC_UNDS: 
             case KC_BSPC:
                 // If mod chording disable the mods
                 if (record->event.pressed && (get_mods() != 0)) {
