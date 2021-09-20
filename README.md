@@ -3,33 +3,33 @@
 # About
 This is my weeb QMK Kyria keymap, the main feature is its animation of [Gawr Gura](https://twitter.com/gawrgura), but it is really powerfull if you watch closely.
 
-# features 
-## animation
+# Features 
+## Animation
 
 ![Gawr-Animation](img/gawr.gif)
 
 Thaks to [j-inc](https://www.reddit.com/r/olkb/comments/h00a8b/i_made_an_oled_animation_of_bongo_cat_that/) for the code, [hikotel0611](https://danbooru.donmai.us/posts/4196461) and [this pixel art](https://www.pinterest.fr/pin/373095150361478394/) for the drawings.
 ## Frequency Symbol layer 
-[layer](#Symbol) 
+[Layer](#Symbol) 
 
 The location of the symbols is mostly based on [frequency](http://xahlee.info/comp/computer_language_char_distribution.html) by various programming languages, but it also uses some mnemonics. 
 
-left hand -> brackets 
+Left hand -> brackets 
 
-right index finger -> logical operators 
+Right index finger -> logical operators 
 
  \ and | are key neighbors just like ~ and `
 
-## home row modifiers
+## Home row modifiers
 The “home row” refers to the middle row of alpha keys “mods” refer to modifiers.
 
 My home row mods go to the symbol layer, if you want to know more about implementation, you can go to the [wiki](https://precondition.github.io/home-row-mods)
 
-## enconder
+## Enconder
 
 There is one encoder on the right half. It has a different function depending on the layer 
 
-[Base](#Base-Layer:-QWERTY) -> volume control
+[Base](#Layers) -> volume control
 
 [Function](#Function) -> next/prev media 
 
