@@ -23,7 +23,7 @@ Right index finger -> logical operators
 ## Home row modifiers
 The “home row” refers to the middle row of alpha keys “mods” refer to modifiers.
 
-My home row mods go to the symbol layer, if you want to know more about implementation, you can go to the [wiki](https://precondition.github.io/home-row-mods) .
+My home row mods go to the symbol layer, if you want to know more about implementation, you can go to the [wiki](https://precondition.github.io/home-row-mods).
 
 ## Enconder
 
@@ -53,8 +53,8 @@ Case modes is a feature that implements different case handling modes, Caps Word
 //  |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
 //  | NAV    |   Z  |   X  |   C  |   V  |   B  | meh  | Hyper|  | Space|c(sft)|   N  |   M  |  , < |  . > |  / ? | NAV    |
 //  `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
-//                         |gaming|numpad|Caps  | esc  | Enter|  | Space|Menu  |Sneak |Menu  |Volume|    
-//                         |      |      | word |      |      |  |      |      | case |      |      |          
+//                         |gaming|numpad|Caps  | esc  | Enter|  | Space|Menu  |Sneak |Cole- |Volume|    
+//                         |      |      | word |      |      |  |      |      | case | mak  |      |          
 //                         `----------------------------------'  `----------------------------------'    
 ```
 
@@ -70,8 +70,8 @@ c(sft) = ctrl + shift
 //  |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
 //  |  NAV   |   Z  |   X  |   C  |   V  |   B  |meh   |Hyper |  | Space|c(sft)|   K  |   M  | ,  < | . >  | /  ? |  NAV   |
 //  `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
-//                         |gaming|numpad|Caps  | esc  | Enter|  | Space|Menu  |Sneak |Menu  |Volume|    
-//                         |      |      | word |      |      |  |      |      | case |      |      |          
+//                         |gaming|numpad|Caps  | esc  | Enter|  | Space|Menu  |Sneak |Cole- |Volume|    
+//                         |      |      | word |      |      |  |      |      | case | mak  |      |          
 //                         `----------------------------------'  `----------------------------------'        
 ``` 
 
