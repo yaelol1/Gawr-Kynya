@@ -66,6 +66,7 @@ enum custom_keycodes {
 // --- 
 // Layers
 #define NAV TT(_RAISE)
+#define NUMPAD TT(_ADJUST)
 #define LSPC LT(_LOWER, KC_SPC)
 
 // 

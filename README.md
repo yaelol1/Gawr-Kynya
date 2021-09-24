@@ -2,9 +2,9 @@
 
 # About
 This is my weeb QMK Kyria keymap, the main feature is its animation of [Gawr Gura](https://twitter.com/gawrgura), but it is really powerfull if you watch closely.
+![Gawr-Animation](img/kyria.png)
 
 # Features 
-## Animation
 
 ![Gawr-Animation](img/gawr.gif)
 
@@ -93,11 +93,11 @@ c(sft) = ctrl + shift
 ## Function 
 ```
 //   ,-------------------------------------------.                              ,-------------------------------------------.
-//   |        | F1   |  F2  | F3   | F4   | F5   |                              | F6   | F7   |  F8  | F9   | F10  |  home  |
+//   |        | F1   |  F2  | F3   | F4   | F5   |                              | F6   | F7   |  F8  | F9   | F10  |        |
 //   |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
-//   |        |  ins |  left| up   | right| F11  |                              |  F12 |   m  |  mup |  m   | pgup |  end   |
+//   |        |  ins |  left| up   | right| F11  |                              |  F12 |   m  |  mup |  m   | pgup |        |
 //   |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
-//   |        | del  |print | down |  prev| next |      |      |  |      |      |  mute|   m  |   m  |  m   | pgd  |        |
+//   |        | del  |print | down |  home| end  |      |      |  |      |      |  m   |   m  |   m  |  m   | pgd  |        |
 //   `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
 //                          |      |      |      |      |      |  |      |      |      |      |      |
 //                          |      |      |      |      |      |  |      |      |      |      |      |
