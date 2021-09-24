@@ -2,9 +2,12 @@
 
 # About
 This is my weeb QMK Kyria keymap, the main feature is its animation of [Gawr Gura](https://twitter.com/gawrgura), but it is really powerfull if you watch closely.
-![Gawr-Animation](img/kyria.png)
+
+![kyria-layout](img/kyria.png)
 
 # Features 
+![Gawr-Animation](img/ykyria.png)
+
 
 ![Gawr-Animation](img/gawr.gif)
 
