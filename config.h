@@ -91,7 +91,8 @@
 
 
 //allows for either side as the master.
-// #define EE_HANDS
+#define EE_HANDS
+#define MASTER_LEFT
 
 
 

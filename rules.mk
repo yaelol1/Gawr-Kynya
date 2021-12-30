@@ -17,7 +17,6 @@ MAGIC_ENABLE = no
 SPACE_CADET_ENABLE = no
 GRAVE_ESC_ENABLE = no
 SRC += features/casemodes.c
-
 # -----
 BOOTMAGIC_ENABLE =no
 STENO_ENABLE = no
