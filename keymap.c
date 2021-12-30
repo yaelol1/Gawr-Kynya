@@ -39,9 +39,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS]   = {
  // |--------+--------+--------+--------+--------+--------|                                                |--------+--------+--------+--------+--------+--------| 
       KC_BSPC, GUI_A, ALT_S, SFT_D, CTL_F, KC_G,                                                              KC_H,   CTL_J,   SFT_K,   ALT_L, GUI_SCLN,  KC_QUOT,
  // `--------------------------+--------+--------+--------+--------+----------|         |--------+--------+--------+--------+---------+--------------------------'
-      NAV,   KC_Z,   KC_X,   KC_C,   ALT_V,   KC_B,     KC_HYPR,   KC_MEH,             LSPC, C(KC_LSFT),   KC_N,  ALT_M,  KC_COMM,   KC_DOT, KC_SLSH,     NAV,
+      NAV,   KC_Z,   KC_X,   KC_C,   ALT_V,   KC_B,     KC_HYPR,   KC_MEH,             LSPC, KC_APP,   KC_N,  ALT_M,  KC_COMM,   KC_DOT, KC_SLSH,     NAV,
 //  `-------+-------+--------+------+------+------+----=--+-------+-----------|         |------+------+------+------+------+-------+------+---------'
-                         TT(_GAMING), NUMPAD, CAPSWORD, KC_ESC, KC_ENT,             LSPC, KC_APP, SNAKECASE, QWERTY, KC_MPLY
+                         TT(_GAMING), NUMPAD, CAPSWORD, KC_ESC, KC_ENT,             LSPC, KC_QUOT, SNAKECASE,  COLEMAK, KC_MPLY
                             //`--------------------------------------------'            `--------------------------------------------'
     ),
 
@@ -51,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS]   = {
  // |--------+--------+--------+--------+--------+--------|                                                |--------+--------+--------+--------+--------+--------|
        KC_BSPC, GUI_A, ALT_R,  SFT_S,   HOME_T,    KC_D,                                                      KC_H, CTL_N, SFT_E, ALT_I, GUI_O,      KC_QUOT,
  // `--------------------------+--------+--------+--------+--------+----------|         |--------+--------+--------+--------+--------+--------------------------'
-        NAV, KC_Z,   KC_X,     KC_C,   ALT_V,    KC_B,   KC_HYPR,   KC_MEH,            LSPC, C(KC_LSFT),   KC_K,    ALT_M,  KC_COMM,  KC_DOT,   KC_SLSH,     NAV,
+        NAV, KC_Z,   KC_X,     KC_C,   ALT_V,    KC_B,   KC_HYPR,   KC_MEH,            LSPC, KC_APP,   KC_K,    ALT_M,  KC_COMM,  KC_DOT,   KC_SLSH,     NAV,
 //  `----------------------+------+------+------+------+----------------------|          | ------+------+------+------+------+----------------------'
-                          TT(_GAMING),  NUMPAD, CAPSWORD, KC_ESC, KC_ENT,             LSPC, KC_APP, SNAKECASE, COLEMAK, KC_MPLY
+                          TT(_GAMING),  NUMPAD, CAPSWORD, KC_ESC, KC_ENT,             LSPC, KC_QUOT, SNAKECASE, QWERTY, KC_MPLY
                            //`------------------------------------------------'          `--------------------------------------------'
     
     

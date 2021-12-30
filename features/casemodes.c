@@ -137,6 +137,8 @@ bool terminate_case_modes(uint16_t keycode, const keyrecord_t *record) {
             case KC_A ... KC_Z:
             case KC_1 ... KC_0:
             case KC_SCLN:
+            case KC_LSFT:
+            case KC_LRFT:
             case KC_MINS:
             case KC_UNDS: 
             case KC_BSPC:
